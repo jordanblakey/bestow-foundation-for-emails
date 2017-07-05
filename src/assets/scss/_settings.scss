@@ -12,7 +12,6 @@
 //   7. Menu
 //   8. Thumbnail
 
-
 // 1. Global
 // ---------
 
@@ -94,18 +93,8 @@ $stat-font-size: 40px;
 // 5. Button
 // ---------
 
-$button-padding: (
-  tiny: 4px 8px 4px 8px,
-  small: 5px 10px 5px 10px,
-  default: 8px 16px 8px 16px,
-  large: 10px 20px 10px 20px,
-);
-$button-font-size: (
-  tiny: 10px,
-  small: 12px,
-  default: 16px,
-  large: 20px,
-);
+$button-padding: ( tiny: 4px 8px 4px 8px, small: 5px 10px 5px 10px, default: 8px 16px 8px 16px, large: 10px 20px 10px 20px, );
+$button-font-size: ( tiny: 10px, small: 12px, default: 16px, large: 20px, );
 $button-color: $white;
 $button-color-alt: $medium-gray;
 $button-font-weight: bold;
@@ -144,4 +133,3 @@ $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
 $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
-
