@@ -15,25 +15,25 @@
 // 1. Global
 // ---------
 
-$primary-color: #2199e8;
-$secondary-color: #777777;
-$success-color: #3adb76;
-$warning-color: #ffae00;
-$alert-color: #ec5840;
-$light-gray: #f3f3f3;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
-$pre-color: #ff6908;
+$primary-color: #4796c6; // Bestow Blue
+$secondary-color: #666e77; // Bestow Dark Grey
+$success-color: #96cc72; // Bestow Green
+$warning-color: #F18564; // Bestow Red
+$alert-color: #F18564; // Bestow Red
+$light-gray: #F4F6F8; // Bestow Light Grey
+$medium-gray: #CDD0D2; // Bestow Medium Grey
+$dark-gray: #666e77;
+$black: #000000;
+$white: #ffffff;
+$pre-color: #666e77;
 $global-width: 580px;
 $global-width-small: 95%;
-$global-gutter: 16px;
+$global-gutter: 32px;
 $body-background: $light-gray;
 $container-background: $white;
 $global-padding: 16px;
 $global-margin: 16px;
-$global-radius: 3px;
+$global-radius: 10px;
 $global-rounded: 500px;
 $global-breakpoint: $global-width + $global-gutter;
 
@@ -42,7 +42,7 @@ $global-breakpoint: $global-width + $global-gutter;
 
 $grid-column-count: 12;
 $column-padding-bottom: $global-padding;
-$container-radius: 0;
+$container-radius: $global-radius;
 
 // 3. Block Grid
 // -------------
@@ -54,14 +54,15 @@ $block-grid-gutter: $global-gutter;
 // -------------
 
 $global-font-color: $black;
-$body-font-family: Helvetica, Arial, sans-serif;
-$global-font-weight: normal;
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:300,500');
+$body-font-family: 'Roboto', Helvetica, Arial, sans-serif;
+$global-font-weight: 300;
 $header-color: inherit;
-$global-line-height: 1.3;
+$global-line-height: 1.6;
 $global-font-size: 16px;
 $body-line-height: $global-line-height;
 $header-font-family: $body-font-family;
-$header-font-weight: $global-font-weight;
+$header-font-weight: 500; // $global-font-weight;
 $h1-font-size: 34px;
 $h2-font-size: 30px;
 $h3-font-size: 28px;
@@ -69,7 +70,7 @@ $h4-font-size: 24px;
 $h5-font-size: 20px;
 $h6-font-size: 18px;
 $header-margin-bottom: 10px;
-$paragraph-margin-bottom: 10px;
+$paragraph-margin-bottom: 24px;
 $small-font-size: 80%;
 $small-font-color: $medium-gray;
 $lead-font-size: $global-font-size * 1.25;
@@ -97,7 +98,7 @@ $button-padding: ( tiny: 4px 8px 4px 8px, small: 5px 10px 5px 10px, default: 8px
 $button-font-size: ( tiny: 10px, small: 12px, default: 16px, large: 20px, );
 $button-color: $white;
 $button-color-alt: $medium-gray;
-$button-font-weight: bold;
+$button-font-weight: 500;
 $button-margin: 0 0 $global-margin 0;
 $button-background: $primary-color;
 $button-border: 2px solid $button-background;
@@ -109,13 +110,13 @@ $button-rounded: $global-rounded;
 
 $callout-background: $white;
 $callout-background-fade: 85%;
-$callout-padding: 10px;
+$callout-padding: 16px;
 $callout-margin-bottom: $global-margin;
 $callout-border: 1px solid darken($callout-background, 20%);
-$callout-border-secondary: 1px solid darken($secondary-color, 20%);
-$callout-border-success: 1px solid darken($success-color, 20%);
-$callout-border-warning: 1px solid darken($warning-color, 20%);
-$callout-border-alert: 1px solid darken($alert-color, 20%);
+$callout-border-secondary: 0 solid darken($secondary-color, 20%);
+$callout-border-success: 0 solid darken($success-color, 20%);
+$callout-border-warning: 0 solid darken($warning-color, 20%);
+$callout-border-alert: 0 solid darken($alert-color, 20%);
 
 // 7. Menu
 // -------
