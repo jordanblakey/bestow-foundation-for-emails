@@ -1,6 +1,6 @@
 # Bestow: Foundation for Emails
 
-Use case: Create document templates for insurance policies that are responsive, easy to layout and can be converted easily to dynamically populated PDF from Flask pdf to html. Also they are cross-client compatible responsive emails.
+Use case: Create document templates for insurance policies that are responsive, easy to layout and can be converted easily to dynamically populated PDF from Flask pdf to html. Also, they are cross-client compatible responsive emails.
 
 ## Full Guide to Foundation Ink
 `http://foundation.zurb.com/emails/docs/sass-guide.html`
