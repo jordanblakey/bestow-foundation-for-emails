@@ -85,7 +85,7 @@ function sass() {
 
 // Copy and compress images
 function images() {
-  return gulp.src(['src/assets/img/**/*', '!src/assets/img/archive/**/*'])
+  return gulp.src(['srchttps://hellobestow.com/assets/img/email/**/*', '!srchttps://hellobestow.com/assets/img/email/archive/**/*'])
     .pipe($.imagemin())
     .pipe(gulp.dest('./dist/assets/img'));
 }
@@ -110,7 +110,7 @@ function watch() {
   gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, inline, browser.reload));
   gulp.watch(['src/layouts/**/*', 'src/partials/**/*']).on('all', gulp.series(resetPages, pages, inline, browser.reload));
   gulp.watch(['../scss/**/*.scss', 'src/assets/scss/**/*.scss']).on('all', gulp.series(resetPages, sass, pages, inline, browser.reload));
-  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
+  gulp.watch('srchttps://hellobestow.com/assets/img/email/**/*').on('all', gulp.series(images, browser.reload));
 }
 
 // Inlines CSS into HTML, adds media query CSS into the <style> tag of the email, and compresses the HTML
@@ -154,7 +154,7 @@ function aws() {
     'Cache-Control': 'max-age=315360000, no-transform, public'
   };
 
-  return gulp.src('./dist/assets/img/*')
+  return gulp.src('./disthttps://hellobestow.com/assets/img/email/*')
     // publisher will add Content-Length, Content-Type and headers specified above
     // If not specified it will set x-amz-acl to public-read by default
     .pipe(publisher.publish(headers))

@@ -2,6 +2,22 @@
 
 Use case: Create document templates for insurance policies that are responsive, easy to layout and can be converted easily to dynamically populated PDF from Flask pdf to html. Also, they are cross-client compatible responsive emails.
 
+-------------------------------------------------
+<!--
+Making dynamic for Intercom
+
+{{ content }}
+{{ unsubscribe_link }}
+{{ unsubscribe_url }}
+{{ first_name | fallback:"Reader" }}
+
+{{ company.name | fallback:"Bestow" }}
+{{ company.remote_company_id | fallback:"ENTER FALLBACK HERE" }}
+{{ company.custom_data.name_of_attribute | fallback:"ENTER FALLBACK HERE" }}
+ -->
+-------------------------------------------------
+
+
 ## Full Guide to Foundation Ink
 `http://foundation.zurb.com/emails/docs/sass-guide.html`
 

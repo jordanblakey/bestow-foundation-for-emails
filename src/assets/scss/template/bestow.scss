@@ -1,38 +1,68 @@
-// Social Media
+// Fonts
 
-table.button.facebook table td {
-	background: #3B5998 !important;
-	border-color: #3B5998;
+.header {
+  .columns {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    img {
+      width: 140px;
+    }
+  }
 }
 
-table.button.twitter table td {
-	background: #1daced !important;
-	border-color: #1daced;
+.content {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.0887115);
+
+  .header-green {
+    background: url('https://hellobestow.com/assets/img/email/referral-background.png') $success-color;
+    background-color: $success-color;
+    border-radius: 5px 5px 0 0;
+    th {
+      padding-bottom: 0;
+    }
+    h1 {
+      padding: 30px 20px !important;
+      font-weight: normal;
+      line-height: 40px;
+      font-size: 26px;
+      text-align: center;
+      color: $white;
+      margin-bottom: 0 !important;
+    }
+  }
+  .grey-border {
+    border-right: 1px solid #D0D0D0;
+    border-bottom: 1px solid #D0D0D0;
+    border-left: 1px solid #D0D0D0;
+    border-radius: 0 0 5px 5px;
+    border-collapse: separate !important;
+    padding-bottom: 24px;
+
+  }
+
+  table.button.at-bottom{
+    margin-bottom: 0;
+    a {
+      border: 1px solid $primary-color;
+    }
+    a:hover {
+      border: 1px solid $primary-color;
+    }
+  }
 }
 
-.wrapper.secondary {
-	background: #f4f6f8;
-}
+.footer {
+  p {
+    font-size: 12px;
+    color: #ADADAD;
+  }
+  .menu th.menu-item {
+    padding: 10px 5px;
+    padding-right: 5px;
 
-.no-margin-bottom {
-	margin-bottom: 0;
-}
-
-.no-padding-bottom {
-	padding-bottom: 0 !important;
-}
-
-.callout {
-	p {
-		margin-bottom: 10px;
-	}
-}
-
-.read-more ul {
-	list-style-type: none;
-	-webkit-padding-start: 0;
-}
-
-.large.expand.success.rounded {
-	margin: 32px 0;
+    a {
+      font-size: 12px;
+      text-decoration: underline;
+    }
+  }
 }
