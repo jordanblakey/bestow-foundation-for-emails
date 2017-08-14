@@ -19,6 +19,12 @@ p {
   hyphens: none;
 }
 
+h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .2em;
+}
+
 .content {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.0887115);
 
@@ -51,7 +57,7 @@ p {
     }
   }
 
-  table.button.at-bottom, .at-bottom{
+  table.button, .at-bottom{
   //   margin-bottom: 0;
     a {
       border: 1px solid $primary-color;
